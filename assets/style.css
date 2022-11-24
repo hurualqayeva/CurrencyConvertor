@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+/* header-start */
+header {
+    display: flex;
+    flex-direction: row;
+    background: #F5F5F6;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    justify-content: center;
+
+
+
+}
+
+header .div-logo-bank {
+    display: flex;
+    align-items: center;
+}
+
+header .div-logo-bank .logo-image {
+    cursor: pointer;
+    height: 30px;
+}
+
+header .div-header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+
+}
+
+header .div-header-menu .header-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+.header-list li {
+    cursor: pointer;
+    margin-left: 27px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #959BA4;
+}
+
+.header-list li:hover {
+    color: black;
+}
+
+header .div-header-button {
+    display: flex;
+    align-items: center;
+    margin-left: 109px;
+}
+
+header .div-header-button .button-header-voyti {
+    background: white;
+    border: 1px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.button-header-voyti:hover {
+    background: #959BA4;
+    box-shadow: 0px 15px 20px #959BA4;
+    color: #fff;
+}
+
+/*header-end*/
+
+/*main-start*/
+main {
+    display: flex;
+    margin-left: -100px;
+    flex-direction: column;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-head-text {
+    padding-bottom: 30px;
+}
+
+main .div-head-text .head-text {
+    font-family: 'Roboto';
+    width: 700px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 42px;
+    color: #000000;
+
+}
+
+main .div-calculate-currency-part {
+    padding-top: 40px;
+    display: flex;
+    margin-left: 55px;
+    width: 100vh;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+main .div-calculate-currency-part .div-left-calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+main .div-calculate-currency-part .calc-txt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #9F9F9F;
+}
+
+main .div-calculate-currency-part ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+main .div-calculate-currency-part li {
+    list-style: none;
+
+}
+
+main .div-calculate-currency-part li button {
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15.5px;
+    padding-right: 15.5px;
+    border: 1px solid #C6C6C6;
+}
+
+.active {
+    background: #833AE0;
+    color: white;
+}
+
+.remove {
+    background: white;
+    color: #C6C6C6;
+}
+
+
+main input {
+    width: 300px;
+    margin-top: 20px;
+    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-left: 15px;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    color: #000000;
+
+
+}
+
+main .input-text {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: -30px;
+    margin-left: 20px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #C6C6C6;
+}
+
+
+
+/*tablet*/
+@media (min-width:992px) and (max-width:1280px) {
+
+    /* header-start */
+    header {
+        display: flex;
+        flex-direction: row;
+        background: #F5F5F6;
+        padding-top: 17.7px;
+        padding-bottom: 14.2px;
+        justify-content: center;
+
+
+
+    }
+
+    header .div-logo-bank {
+        display: flex;
+        align-items: center;
+    }
+
+    header .div-logo-bank .logo-image {
+        cursor: pointer;
+        height: 26.6px;
+    }
+
+    header .div-header-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 62.2px;
+
+    }
+
+    header .div-header-menu .header-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+    }
+
+    .header-list li {
+        cursor: pointer;
+        margin-left: 24px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 444.44;
+        font-size: 13.3px;
+        line-height: 11.55px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.053em;
+        color: #959BA4;
+    }
+
+    .header-list li:hover {
+        color: black;
+    }
+
+    header .div-header-button {
+        display: flex;
+        align-items: center;
+        margin-left: 96.88px;
+    }
+
+    header .div-header-button .button-header-voyti {
+        background: white;
+        border: 0.889px;
+        padding: 8.89px;
+        padding-top: 13.3px;
+        padding-bottom: 13.3px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 444.44;
+        font-size: 13.3px;
+        line-height: 11.5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+        letter-spacing: 0.053em;
+        color: #000000;
+    }
+
+    .button-header-voyti:hover {
+        background: #959BA4;
+        box-shadow: 0px 15px 20px #959BA4;
+        color: #fff;
+    }
+
+    /*header-end*/
+
+    /*main-start*/
+    main {
+        display: flex;
+        margin-left: -88.9px;
+        flex-direction: column;
+        height: 53.3vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-head-text {
+        padding-bottom: 26.6px;
+    }
+
+    main .div-head-text .head-text {
+        font-family: 'Roboto';
+        font-style: normal;
+        display: flex;
+        justify-items: flex-start;
+        font-weight: 622.2;
+        font-size: 44.44px;
+        line-height: 37.33px;
+        color: #000000;
+
+    }
+
+    main .div-calculate-currency-part {
+        padding-top: 35.5px;
+        display: flex;
+        margin-left: 48.8px;
+        width: 88.9vh;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    main .div-calculate-currency-part .div-left-calc {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    main .div-calculate-currency-part .calc-txt {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 355.55;
+        font-size: 17.7px;
+        line-height: 12.4px;
+        display: flex;
+        align-items: center;
+        color: #9F9F9F;
+    }
+
+    main .div-calculate-currency-part ul {
+        margin-top: 8.89px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .div-calculate-currency-part li {
+        list-style: none;
+
+    }
+
+    main .div-calculate-currency-part li button {
+        cursor: pointer;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 266.66;
+        font-size: 17.7px;
+        line-height: 12.4px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        padding-top: 8.89px;
+        padding-bottom: 8.89px;
+        padding-left: 13.45px;
+        padding-right: 13.45px;
+        border: 0.889px solid #C6C6C6;
+    }
+
+    .active {
+        background: #833AE0;
+        color: white;
+    }
+
+    .remove {
+        background: white;
+        color: #C6C6C6;
+    }
+
+
+    main input {
+        width: 266.66;
+        margin-top: 17.7px;
+        padding-bottom: 88.9px;
+        padding-top: 8.89px;
+        padding-left: 13.3px;
+        border: 0.889px solid #E5E5E5;
+        box-sizing: border-box;
+        border-radius: 5.333px;
+        font-family: 'Roboto';
+        font-style: normal;
+        letter-spacing: 1.777px;
+        font-weight: 622.22;
+        font-size: 35.5px;
+        line-height: 37.33px;
+        color: #000000;
+
+
+    }
+
+    main .input-text {
+        position: absolute;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 355.55;
+        font-size: 14.22px;
+        margin-top: -26.66px;
+        margin-left: 17.7px;
+        line-height: 12.44px;
+        display: flex;
+        align-items: center;
+        color: #C6C6C6;
+    }
+
+
+
+}
+
+/*phone*/
+@media (min-width:320px) and (max-width:991px) {
+
+    /* header-start */
+    header {
+        display: flex;
+        flex-direction: row;
+        background: #F5F5F6;
+        padding-top: 13.7px;
+        padding-bottom: 11px;
+        justify-content: center;
+
+
+
+    }
+
+    header .div-logo-bank {
+        display: flex;
+        align-items: center;
+    }
+
+    header .div-logo-bank .logo-image {
+        cursor: pointer;
+        height: 20px;
+    }
+
+    header .div-header-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 48px;
+
+    }
+
+    header .div-header-menu .header-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+    }
+
+    .header-list li {
+        cursor: pointer;
+        margin-left: 18.5px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 344;
+        font-size: 10.3px;
+        line-height: 8.9px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+        color: #959BA4;
+    }
+
+    .header-list li:hover {
+        color: black;
+    }
+
+    header .div-header-button {
+        display: flex;
+        align-items: center;
+        margin-left: 75px;
+    }
+
+    header .div-header-button .button-header-voyti {
+        background: white;
+        border: 0.6px;
+        padding: 6px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 344;
+        font-size: 10px;
+        line-height: 8.9px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #000000;
+    }
+
+    .button-header-voyti:hover {
+        background: #959BA4;
+        box-shadow: 0px 15px 20px #959BA4;
+        color: #fff;
+    }
+
+    /*header-end*/
+
+    /*main-start*/
+    main {
+        display: flex;
+        margin-left: -60px;
+        flex-direction: column;
+        height: 41.2vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-head-text {
+        padding-top: 30px;
+        margin-top: 30px;
+        padding-left: 200px;
+        align-items: center;
+    }
+
+    main .div-head-text .head-text {
+        font-family: 'Roboto';
+        width: 560px;
+        align-items: center;
+        font-style: normal;
+        font-weight: 481;
+        font-size: 34.4px;
+        line-height: 28.9px;
+        color: #000000;
+
+    }
+
+    main .div-calculate-currency-part {
+        padding-top: 27.5px;
+        display: flex;
+        margin-left: 37.8px;
+        width: 60vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .div-calculate-currency-part .div-left-calc {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    main .div-calculate-currency-part .calc-txt {
+        margin-top: 30px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 275;
+        font-size: 13.7px;
+        line-height: 9.6px;
+        display: flex;
+        align-items: center;
+        color: #9F9F9F;
+    }
+
+    main .div-calculate-currency-part ul {
+        margin-top: 6px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .div-calculate-currency-part li {
+        list-style: none;
+
+    }
+
+    main .div-calculate-currency-part li button {
+        cursor: pointer;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 206;
+        font-size: 13.7px;
+        line-height: 9.6px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 10.6px;
+        padding-right: 10.6px;
+        border: 1px solid #C6C6C6;
+    }
+
+    .active {
+        background: #833AE0;
+        color: white;
+    }
+
+    .remove {
+        background: white;
+        color: #C6C6C6;
+    }
+
+
+    main input {
+        width: 206;
+        margin-top: 13.7px;
+        padding-bottom: 60px;
+        padding-top: 6px;
+        padding-left: 10px;
+        border: 0.6px solid #E5E5E5;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-family: 'Roboto';
+        font-style: normal;
+        letter-spacing: 1.3px;
+        font-weight: 481;
+        font-size: 27.5px;
+        line-height: 28.9px;
+        color: #000000;
+
+
+    }
+
+    main .input-text {
+        position: absolute;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 275;
+        font-size: 11px;
+        margin-top: -20.6px;
+        margin-left: 13.7px;
+        line-height: 9.6px;
+        display: flex;
+        align-items: center;
+        color: #C6C6C6;
+    }
+}

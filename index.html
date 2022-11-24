@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="div-logo-bank">
+            <img class="logo-image" src="./assets/Photos/logo_bank.svg" alt="#">
+        </div>
+
+        <div class="div-header-menu">
+            <ul class="header-list">
+                <li>БАНК</li>
+                <li>БИЗНЕС</li>
+                <li>ИНВЕСТИЦИИ</li>
+                <li>СТРАХОВАНИЕ</li>
+                <li>МОБАЙЛ</li>
+                <li>ПУТЕШЕСТВИЯ</li>
+                <li>РАЗВЛЕЧЕНИЯ</li>
+            </ul>
+        </div>
+
+        <div class="div-header-button">
+            <button class="button-header-voyti">ВОЙТИ</button>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="div-head-text">
+            <p class="head-text">
+                Конвертер валют онлайн
+            </p>
+        </div>
+
+        <div class="div-calculate-currency-part">
+            <div class="div-left-calc">
+                <p class="calc-txt">
+                    У меня есть
+                </p>
+
+                <ul class="currency-left-list">
+                    <li class="left-rubl left-list"><button class="button-left active">RUB</button></li>
+                    <li class="left-dollar left-list"><button class="button-left remove">USD</button></li>
+                    <li class="left-euro left-list"><button class="button-left remove">EUR</button></li>
+                    <li class="left-gbp left-list"><button class="button-left remove">GBP</button></li>
+                </ul>
+                <div class="div-input">
+                    <input class="input-left-calculate" type="number" placeholder="12345....">
+                    <p class="input-text txt-left-input">1 RUB = 0.0135 USD</p>
+                </div>
+            </div>
+
+            <div class="div-right-calc">
+                <p class="calc-txt">
+                    Хочу приобрести
+                </p>
+
+                <ul class="currency-right-list">
+                    <li class="right-rubl right-list"><button class="button-right remove">RUB</button></li>
+                    <li class="right-dollar right-list"><button class="button-right active">USD</button></li>
+                    <li class="right=euro right-list" ><button  class="button-right remove">EUR</button></li>
+                    <li class="right-gbp right-list"><button  class="button-right remove">GBP</button></li>
+                </ul>
+                <div class="div-input">
+                    <input class="input-right-calculate" type="number" placeholder="12345....">
+                    <p class="input-text txt-right-input">1 USD = 73.8896 RUB</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
